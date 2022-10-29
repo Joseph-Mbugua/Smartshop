@@ -4,8 +4,8 @@ E-commerce website
 🛍️ 🛒  using flask framework 
        •| Python |•
 ```
-<h3 align="center">Hi 👋, This is Rongo University developers</h3>
-<h3 align="center">Passionate fullstack Devs</h3>
+<img src="/static/sm_ru.png" height=100px widdth=100px align=left>
+<p align="center">Hi 👋, This is Rongo University developers, Passionate fullstack Devs</p>
 
 - 🔭 Working on  **🛍️-𝚂𝙼𝙰𝚁𝚃𝚂𝙷𝙾𝙿-🛒**
 
