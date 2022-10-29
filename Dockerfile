@@ -10,8 +10,8 @@ RUN apt update && apt upgrade -y
 RUN git clone https://github.com/DSCRongo/Smartshop.git
 && cd Smartshop
 WORKDIR /Smartshop
-RUN pip install -r requirements.txt
+RUN pip install -r brain/cara.txt
 CMD python3 app.py
 # RUN yarn config set ignore-engines true && yarn install --ignore-engines
 # RUN git config --global user.name "Royce-N" && git config --global user.email "krakinzlab@gmail.com"
-# 
+
