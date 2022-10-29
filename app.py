@@ -1,3 +1,7 @@
+# If you are not good in python
+# pls do not edit a damn shit
+# 🛍️ 𝚂𝙼𝙰𝚁𝚃𝚂𝙷𝙾𝙿 🛒
+
 from flask import Flask, render_template, flash, request, redirect, url_for, session
 from flask_mysqldb import MySQL
 from flask.signals import message_flashed
@@ -347,3 +351,7 @@ def vieworders():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# If you are not good in python
+# pls do not edit a damn shit
+# 🛍️ 𝚂𝙼𝙰𝚁𝚃𝚂𝙷𝙾𝙿 🛒
