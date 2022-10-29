@@ -14,5 +14,5 @@ RUN pip install -r brain/cara.txt
 CMD gunicorn app:app
 # CMD python3 app.py
 # RUN yarn config set ignore-engines true && yarn install --ignore-engines
-# RUN git config --global user.name "Royce-N" && git config --global user.email "krakinzlab@gmail.com"
+# RUN git config --global user.name "Royce-B" && git config --global user.email "krakinzlab@gmail.com"
 
