@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                  <h1><b><u>Our Contacts</u></b></h1><br>
+                  <p><b>Phone Number:</b> +254708964590</p><br>
+                  <p><b>Email:</b> Josephmbugua968@gmail.com</p><br>
+                  <p><b>Twitter:</b>@smartshop.com</p><br>
+                  <br>
+                    <p>SMARTSHOP.com is an online shop under development,<br>it is a shop where customers can register their details,<br>update them if they wish to,place orders on various electronic products like smartphones, brwatches and many other elctronic devices.
+                        <br><b>Welcome! our esteemed customer.</b>
+                    </p>
+                </div>
+
+                <div class="col-2">
+
+                    <h2><u>Our Policy</u></h2><br>
+                    <p>Goods Once Sold Cannot Be Returned </p><br>
+                    <br>
+                    <p>HAPPY DOING BUSINESS WITH YOU! </p>
+                    <image src="{{url_for('static',filename = 'about.jpeg')}}" width="100%" height="100%">
+                </div>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock %}

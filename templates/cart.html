@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+<div class="form">
+
+          <div align="center">
+            <div align="center" class="border">
+
+              <h2 class="word">
+                  <form action="{{ url_for('cart') }}" method="post">
+                    <div class="msg">{{ msg }}</div>
+                      <input id="name" name="name" type="text" placeholder="Enter Your Name" required="1" class="textbox"/><br><br>
+                      <input id="phone" name="phone" type="phone" placeholder="Enter Your Phone" required="1" class="textbox"/><br><br>
+                      <input id="address" name="address" type="text" placeholder="Enter Your Physical Address" required="1" class="textbox"/><br><br>
+                      <input id="price" name="price" type="number" placeholder="Enter Total Price" required="1" class="textbox"/><br><br>
+                      <input id="product_name" name="product_name" type="text" placeholder="Enter Produt Name" required="1" class="textbox"/><br><br>
+                      <input type="submit" class="btn" value="Place the order"><br>
+                  </form>
+              </h2>
+              <p class="bottom">Want More?  <a class="bottom" href="{{url_for('products')}}"><u>Click Here</u> </a></p>
+            </div>
+          </div>
+
+</div>
+  {% endblock %}

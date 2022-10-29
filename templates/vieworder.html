@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% include 'header.html' %}
+{% block title %}PROFILE{% endblock %}
+
+{% block content %}
+<style>
+
+
+  table, td, th {
+  border: 1px solid black;
+}
+table{
+      width:10%;
+      position:absolute;
+
+}
+
+
+</style>
+
+<div class="centre">
+
+  <h2>Orders Page</h2>
+  <div>
+    <p>Your order details are below:</p>
+      <table>
+          <tr>
+              <th>ORDER ID:</th>
+              <td>{{ account['id'] }}</td>
+          </tr>
+          <tr>
+              <th>CUSTOMER NAME:</th>
+              <td>{{ account['name'] }}</td>
+          </tr>
+          <tr>
+              <th>CUSTOMER PHONE NUMBER:</th>
+              <td>{{ account['phone'] }}</td>
+          </tr>
+          <tr>
+              <th>CUSTOMERS'S ADDRESS:</th>
+              <td>{{ account['address'] }}</td>
+          </tr>
+          <tr>
+              <th>PRODUCT PRICE:</th>
+              <td>{{ account['price'] }}</td>
+          </tr>
+          <tr>
+              <th>PRODUCT NAME:</th>
+              <td>{{ account['product_name'] }}</td>
+          </tr>
+      </table>
+  </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% include 'header.html' %}
+{% block title %}PROFILE{% endblock %}
+
+{% block content %}
+<style>
+
+
+  table, td, th {
+  border: 1px solid black;
+}
+table{
+      width:10%;
+      position:absolute;
+
+}
+
+
+</style>
+
+<div class="centre">
+
+  <h2>Profile Page</h2>
+  <div>
+    <p>Your account details are below:</p>
+      <table>
+          <tr>
+              <th>Username:</th>
+              <td>{{ account['username'] }}</td>
+          </tr>
+          <tr>
+              <th>Password:</th>
+              <td>{{ account['password'] }}</td>
+          </tr>
+          <tr>
+              <th>Email:</th>
+              <td>{{ account['email'] }}</td>
+          </tr>
+          <tr>
+              <th>Phone:</th>
+              <td>{{ account['phone'] }}</td>
+          </tr>
+          <tr>
+              <th>Address:</th>
+              <td>{{ account['address'] }}</td>
+          </tr>
+      </table>
+  </div>
+  </div>
+
+
+{% endblock %}

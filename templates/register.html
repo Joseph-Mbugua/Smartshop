@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word"><u>Register</u></h1>
+             </div><br><br><br>
+            <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+
+                  <p>Enter Your Username</p>
+                    <input id="username" name="username" type="text" placeholder="" required="1" class="textbox"/><br><br>
+                    <p>Enter Your Password</p>
+                    <input id="password" name="password" type="password" placeholder="" required="1" class="textbox"/><br><br>
+                    <p>Enter Your Email ID</p>
+                    <input id="email" name="email" type="text" placeholder="" required="1" class="textbox"/><br><br>
+                    <p>Enter Your Phone Number</p>
+                    <input id="phone" name="phone" type="phone" placeholder="" required="1" class="textbox"/><br><br>
+                    <p>Enter Your Address</p>
+                    <input id="address" name="address" type="text" placeholder="" required="1" class="textbox"/><br><br>
+                    <p>Enter Your Full Names</p>
+                    <input id="name" name="name" type="text" placeholder="" required="1" class="textbox"/><br><br>
+                    <input type="submit" class="btn" value="Register"><br>
+                </form>
+            </h2>
+            <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"><u>Login Here</u> </a></p>
+          </div>
+        </div>
+  {% endblock %}

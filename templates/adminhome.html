@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+
+  image {
+    margin-top: 10px;
+
+  }
+
+  .navbar {
+    overflow: hidden;
+
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: blue;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+
+        <nav>
+          <ul id="MenuItems">
+
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">ADMIN </button>
+                <div class="dropdown-content">
+                  <a href="{{ url_for('customers') }}">CUSTOMERS</a>
+                  <a href="{{ url_for('productsmgmt') }}">PRODUCTS </a>
+                  <a href="{{ url_for('orders') }}">ORDERS</a>
+
+                </div>
+              </div>
+            </li>
+            <li><a href="{{ url_for('adminlogout') }}"><image src="{{url_for('static',filename = 'logout.jpg')}}" width="25px" height="20px">
+        </a></li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="header">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-2">
+    				<h1>“Business opportunities are like buses, there’s always another one coming.”</h1> <br><h2><i>– Richard Branson</i></h2> <br><br>
+    			<h1>“<i>There’s no shortage of remarkable ideas, what’s missing is the will to execute them.”</i></h1><br><h2> – Seth Godin </h2>
+    			</div>
+    			<div class="col-2">
+    				<image src="{{url_for('static',filename = 'watch1a-1.jpg')}}">
+    			</div>
+    		</div>
+    	</div>
+
+
+    {% endblock %}
