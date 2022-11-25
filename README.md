@@ -13,7 +13,10 @@ E-commerce website
 
 - 📚 Learning **flask, html and css**
 
-- 📦 How to reach us **Who knows? Maybe Ricky**
+- 📦 How to reach us **Who knows? Maybe Gas**
+##
+Preview here [Smartshop](https://smartshop-gascomit.koyeb.app/)
+##
 
 <h3 align="left">Connect with us:</h3>
 <p align="left">
